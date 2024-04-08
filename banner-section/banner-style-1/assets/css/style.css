@@ -90,6 +90,9 @@ a{
   max-width: 100%;
   height: auto;
 }
+.bl-wrapper h1{
+  font-size: 48px !important;
+}
 .bl-wrapper .bl-title{
   font-size: 32px;
   color: var(--primary-color);
@@ -100,9 +103,7 @@ a{
   margin: 0;
   margin-bottom: 12px;
 }
-.banner-area .main-title{
-  font-size: 56px;
-}
+
 .bl-title:hover{
   color: var(--white-color);
 }
@@ -112,9 +113,14 @@ a{
 
 .grid-container{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 16px;
   align-items: stretch;
+}
+.grid-container .bl-wrapper:nth-child(1) {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
 }
 
 .bl-post-img::before{
@@ -132,31 +138,40 @@ a{
   bottom: 50px;
   padding: 0 20px;
 }
-.inner-grid .bl-post-3{
-  margin-top: 16px;
-}
+
 
 /*====== style 2 =======*/
-.style-2 .grid-container {
-  grid-template-columns: 1fr 2fr;
+.style-2 .bl-wrapper:nth-child(1){
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.style-2 .bl-wrapper:nth-child(3){
+  grid-row: 1 / -1;
+  grid-column: 2 / -1;
 }
 /*====== style 2 =======*/
 
 /*====== style 3 =======*/
-.style-3 .grid-container , .style-4 .grid-container {
-  grid-template-columns: 1fr;
-}
-.style-3 .grid-container .inner-grid , .style-4 .grid-container .inner-grid{
-  display: grid;
+.style-3 .grid-container , .style-4 .grid-container{
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  align-items: stretch;
+  grid-template-rows: auto;
 }
-.style-3 .inner-grid .bl-post-3{
-  margin-top: 0px;
+.style-3 .bl-wrapper:nth-child(1){
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
+.style-3 .bl-wrapper:nth-child(3) {
+  grid-row: 2;
+  grid-column: 1 / -1;
+}
+
+
 /*====== style 3 =======*/
 /*====== style 4 =======*/
-
+.style-4 .bl-wrapper:nth-child(1){
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+}
 /*====== style 4 =======*/
 /* banner section css end */
