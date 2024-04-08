@@ -1,0 +1,114 @@
+/* 1400, 1199, 991, 767, 575, 480, 360, 320 */
+/* CSS Index
+-----------------------------------
+1.default css
+-----------------------------------
+*/
+/* min-width 1430 */
+@media (min-width: 1430px) {
+}
+/* max-width 1399 */
+@media (max-width: 1399.98px) {
+  /* futurism section start */
+  .grid-container-2 , .style-2 .grid-container-2{
+    grid-template-columns: minmax(auto, 457px) 1fr;
+  }
+  .style-2 .grid-container-2{
+    grid-template-columns:1fr minmax(auto, 457px);
+  }
+  .style-3 .grid-container-2{
+    grid-template-columns:1fr minmax(auto, 457px) 1fr;
+  }
+  /* futurism section end */
+}
+/* max-width 1199 */
+@media (max-width: 1199.98px) { 
+  /* futurism section start */
+  .grid-container-2 , .style-2 .grid-container-2{
+    grid-template-columns:1fr;
+  }
+  .style-3 .grid-container-2{
+    grid-template-columns:1fr 1fr 1fr;
+  }
+
+   .style-2 .grid-container-2 .grid-item:nth-child(1){
+    order: 1;
+  }
+  .style-2 .grid-container-2 .grid-item:nth-child(2){
+   order: 2; 
+  }
+ 
+/* futurism section end */
+}
+/* max-width 991 */
+@media (max-width: 991.98px) {
+    /* banner section css start */
+    .grid-container , .style-2 .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .style-2 .grid-container .grid-item:nth-child(1) , .style-3  .grid-item:nth-child(1) {
+        order: 2;
+    }
+    .style-2 .grid-container .grid-item:nth-child(2) , .style-3  .grid-item:nth-child(2) {
+      order: 1; 
+    }
+    .style-4  .grid-item:nth-child(1){
+      order: 1; 
+    }
+    .style-4  .grid-item:nth-child(2){
+      order: 2; 
+    }
+    .inner-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .inner-grid .bl-post-3{
+        margin-top: 0px;
+    }
+    /* banner section css end */
+    /* futurism section start */
+
+    .style-3 .grid-container-2{
+      grid-template-columns:1fr;
+    }
+  /* futurism section end */
+ 
+
+   
+}
+/* max-width 767 */
+@media (max-width: 767.98px) { 
+  
+
+    
+}
+/* max-width 575 */
+@media (max-width: 575.98px) {
+ 
+     /* futurism section start */
+    .grid-container-2 .inner-grid {
+      grid-template-columns: 1fr;
+    }
+     /* futurism section end */
+        
+    
+     
+  
+}
+/* max-width 479 */
+@media (max-width: 479.98px) {
+    
+      /* futurism section css start */
+      .bl-wrapper .bl-title{
+        font-size: 24px;
+       }
+      /* futurism section css end */
+      
+ 
+  
+}
+/* max-width 383 */
+@media (max-width: 383.98px) {
+  
+}

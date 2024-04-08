@@ -1,0 +1,77 @@
+/* 1400, 1199, 991, 767, 575, 480, 360, 320 */
+/* CSS Index
+-----------------------------------
+1.default css
+-----------------------------------
+*/
+
+
+/* max-width 1199 */
+@media (max-width: 1199.98px) { 
+
+  .bl-wrapper .bl-title {
+    font-size: 24px;
+  }
+  .banner-area .main-title{
+    font-size: 48px;
+  }
+  .bl-content {
+    bottom: 10px;
+  }
+  
+}
+/* max-width 991 */
+@media (max-width: 991.98px) {
+    /* banner section css start */
+    .banner-area .main-title{
+      font-size: 40px;
+      transition: 0.3s linear;
+    }
+    .grid-container , .style-2 .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .style-2 .grid-container .grid-item:nth-child(1) , .style-3 .grid-container .grid-item:nth-child(1){
+      order: 2;
+    }
+    .style-2 .grid-container .grid-item:nth-child(2) , .style-3 .grid-container .grid-item:nth-child(2){
+      order: 1;
+    }
+    .inner-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .inner-grid .bl-post-3{
+        margin-top: 0px;
+    }
+    /* banner section css end */
+   
+}
+/* max-width 767 */
+@media (max-width: 575.98px) { 
+  .style-3 .grid-container .inner-grid , .style-4 .grid-container .inner-grid{
+    grid-template-columns: 1fr;
+    }
+}
+
+/* max-width 575 */
+@media (max-width: 575.98px) {     
+     /* banner section css start */
+      .bl-wrapper .bl-title {
+        font-size: 18px;
+      }
+      .banner-area .main-title{
+        font-size: 24px;
+      }
+    /* banner section css end */    
+}
+/* max-width 479 */
+@media (max-width: 479.98px) {
+      /* banner section css start */
+      .inner-grid , .style-3 .inner-grid{
+        grid-template-columns: 1fr;
+      }
+    /* banner section css end */
+  
+}
+

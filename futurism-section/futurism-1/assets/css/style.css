@@ -1,0 +1,223 @@
+/*
+  The Name:Cravings Cafe HTML Tplate
+  Author: 
+  Support: 
+  Description: 
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1.default css
+2.banner section css 
+3.futurism section css
+4.popular post section css
+-----------------------------------
+*/
+:root{
+  --primary-color:#179464;
+  --secondary-color:#e6fodf;
+  --tertiary-color:#ffc947;
+  --black-color:#191919;
+  --white-color:#f8fbf6;
+  --blue-color:#3147ff;
+}
+/* font family call */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap');
+
+
+
+
+/* position-relative */
+.position-relative{
+  position: relative !important;
+}
+/* position-absolute */
+.position-absolute{
+  position: absolute !important;
+}
+/* d-block */
+.d-block{
+  display: block !important;
+}
+/* z-index */
+.z-1 {
+  z-index: 1 !important;
+}
+.z-2 {
+  z-index: 2 !important;
+}
+.z-3 {
+  z-index: 3 !important;
+}
+/* height */
+.h-100{
+  height: 100% !important;
+}
+/* width */
+.w-100{
+  width: 100% !important;
+}
+.start-0{
+  left: 0 !important;
+}
+/* overflow hiddden */
+.overflow-hidden{
+  overflow: hidden !important;
+}
+
+/* margin-bottom */
+.mb-3{
+  margin-bottom: 16px;
+}
+img{
+  height: auto;
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+a:hover{
+  color: var(--white-color);
+}
+/* banner section css start */
+.futurism-area{
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.bl-wrapper .bl-title , .bl-content h6{
+  font-size: 32px;
+  color: var(--primary-color);
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: 0.3s linear;
+  margin: 0;
+}
+.bl-content h6 {
+  font-size: 16px;
+}
+.bl-title:hover{
+  color: var(--white-color);
+}
+.author-name {
+  color: var(--tertiary-color);
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.bl-card-img img {
+  max-width: 50px;
+}
+.bl-post-img::before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--black-color);
+  content: "";
+  opacity: 80%;
+  mix-blend-mode: multiply;
+}
+.bl-content{
+  bottom: 50px;
+  padding: 0 20px;
+}
+
+.bl-title:hover{
+  color: var(--white-color);
+}
+.inner-grid .bl-post-3{
+  margin-top: 16px;
+}
+
+/*====style 2 start=====*/
+.style-2 .grid-container{
+  grid-template-columns: 1fr 2fr;
+}
+/*====style 2 end=====*/
+
+
+/*====style 3 start=====*/
+.style-3 .grid-container{
+  grid-template-columns: 1fr;
+}
+.style-3 .inner-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.style-3 .inner-grid .bl-post-3{
+  margin-top: 0px;
+}
+/*====style 3 end=====*/
+
+
+
+
+/* banner section css end */
+
+/* futurism section start */
+.grid-container-2{
+  display: grid;
+  grid-template-columns: minmax(auto, 757px) 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+.grid-container-2
+.bl-card-wraaper .bl-card-img img{
+  max-width: 75px;
+}
+.bl-card-wraaper-info {
+  display: grid;
+  grid-template-columns:auto 1fr;
+  gap: 16px;
+}
+.bl-card-wraaper-info .bl-content{
+  padding: 0;
+}
+.bl-card-wraaper:last-child{
+  margin-bottom: 0 !important;
+}
+.grid-container-2 .inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/*====style 2 start=====*/
+.style-2 .grid-container-2{
+  grid-template-columns:1fr minmax(auto, 757px);
+}
+.style-2 .grid-container-2 .grid-item:nth-child(1){
+  order: 2;
+}
+.style-2 .grid-container-2 .grid-item:nth-child(2){
+ order: 1; 
+}
+
+/*====style 2 end=====*/
+
+
+/*====style 3 start=====*/
+.style-3 .grid-container-2{
+  grid-template-columns:1fr minmax(auto, 757px) 1fr;
+}
+/*====style 3 end=====*/
+
+
+/* futurism section end */
+
+/* popular post section css start  */
+/* popular post section css end  */
