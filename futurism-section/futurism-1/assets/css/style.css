@@ -95,7 +95,7 @@ a:hover{
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
-.bl-wrapper .bl-title{
+.bl-title{
   color: var(--primary-color);
   font-family: "Cabin", sans-serif;
   font-weight: 700;
@@ -107,15 +107,17 @@ a:hover{
 .bl-wrapper h5 {
   font-size: 32px;
 }
+.bl-card-wrapper{
+  min-height: 300px;
+}
 .bl-card-wraaper-info h6{
   font-size: 16px;
 }
+
 .bl-content h6 {
   font-size: 16px;
 }
-.bl-title:hover{
-  color: var(--white-color);
-}
+
 .author-name {
   color: var(--tertiary-color);
 }

@@ -78,6 +78,17 @@ img{
   max-width: 100%;
   height: auto;
 }
+.section-title {
+  color: var(--primary-color);
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: 0.3s linear;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  border-bottom: 1px solid var(--black-color);
+}
 
 /* banner section css start */
 .bl-slider-wrapper{
@@ -88,8 +99,8 @@ img{
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
-.bl-wrapper .bl-title{
-  color: var(--primary-color);
+.bl-title{
+   color: var(--primary-color);
   font-family: "Cabin", sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -123,7 +134,7 @@ img{
 }
 .bl-content{
   bottom: 20px;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 .bl-title:hover{
   color: var(--white-color);

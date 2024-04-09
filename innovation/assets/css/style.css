@@ -26,8 +26,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap');
 
 
-
-
 /* position-relative */
 .position-relative{
   position: relative !important;
@@ -65,22 +63,9 @@
 .overflow-hidden{
   overflow: hidden !important;
 }
-.big-fix{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* margin-bottom */
+/* mb-3 */
 .mb-3{
-  margin-bottom: 16px !important;
-}
-.mb-p p:last-child{
-  margin: 0;
-}
-img{
-  height: auto;
-  max-width: 100%;
+  margin-bottom: 16px;
 }
 a{
   text-decoration: none;
@@ -89,24 +74,25 @@ a{
 a:hover{
   color: var(--white-color);
 }
-/* banner section css start */
-.combinator-area{
-  background-color: var(--black-color);
-  color: var(--white-color);
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
+img{
+  max-width: 100%;
+  height: auto;
 }
-.bl-title{
-  color: var(--primary-color);
-  font-family: "Cabin", sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  transition: 0.3s linear;
+.m-0{
   margin: 0;
 }
-.section-title{
+.big-fix{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* banner section css start */
+
+/* banner section end */
+
+/* innovation section start */
+.section-title {
   color: var(--primary-color);
   font-family: "Cabin", sans-serif;
   font-weight: 700;
@@ -117,22 +103,39 @@ a:hover{
   text-transform: capitalize;
   border-bottom: 1px solid var(--black-color);
 }
-.bl-wrapper h5 {
-  font-size: 32px;
-  padding: 5px 0;
-}
-.bl-card-wraaper-info h6{
+.innovation-area{
+  background-color: var(--black-color);
+  color: var(--white-color);
   font-size: 16px;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
-
-
-.author-name, .sub-title{
+.bl-title {
+   color: var(--primary-color);
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: 0.3s linear;
+  margin: 0;
+}
+.author-name  , .sub-title{
   color: var(--tertiary-color);
   display: inline-block;
 }
-
-.bl-card-img img {
-  max-width: 75px;
+.sub-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.author-name:hover , .sub-title{
+  color: var(--tertiary-color);
+  font-size: 16px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
 }
 .bl-post-img::before{
   position: absolute;
@@ -145,50 +148,23 @@ a:hover{
   opacity: 80%;
   mix-blend-mode: multiply;
 }
-.bl-title:hover{
-  color: var(--white-color);
+.innovation-content-info h2 {
+  font-size: 40px;
 }
-.bl-card-wrapper{
-  min-height: 300px;
+.author-info img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
-/* banner section css end */
-
-/* combinator section start */
-.combinator-area .grid-container {
+.author-info {
+  margin: 16px 0;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: auto 1fr;
   gap: 16px;
-  align-items: stretch;
+  align-items: center;
 }
-
-.bl-card-wraaper .bl-card-img img{
-  max-width: 75px;
+.author-inner-info h6{
+  font-size: 16px;
+  padding-right: 8px;
 }
-.bl-card-wraaper-info .bl-content{
-  padding: 0;
-}
-.bl-card-wraaper:last-child{
-  margin-bottom: 0 !important;
-}
-.bl-card-wraaper-info {
-  display: flex;
-  align-items: start;
-  gap: 16px;
-}
-
-/*====style 2 start=====*/
-.style-2 .grid-container {
-  grid-template-columns: 1fr 2fr;
-}
-.style-2 .bl-wrapper:nth-child(1){
-  grid-column: 2;
-  grid-row: 1;
-}
-/*====style 2 end=====*/
-
-
-
-
-
-/* combinator section end */
+/* innovation section end */

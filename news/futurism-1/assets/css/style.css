@@ -73,10 +73,7 @@
 
 /* margin-bottom */
 .mb-3{
-  margin-bottom: 16px !important;
-}
-.mb-p p:last-child{
-  margin: 0;
+  margin-bottom: 16px;
 }
 img{
   height: auto;
@@ -90,7 +87,7 @@ a:hover{
   color: var(--white-color);
 }
 /* banner section css start */
-.combinator-area{
+.news-area{
   background-color: var(--black-color);
   color: var(--white-color);
   font-size: 16px;
@@ -106,29 +103,29 @@ a:hover{
   transition: 0.3s linear;
   margin: 0;
 }
-.section-title{
-  color: var(--primary-color);
-  font-family: "Cabin", sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  transition: 0.3s linear;
-  font-size: 40px;
-  padding-bottom: 10px;
-  text-transform: capitalize;
-  border-bottom: 1px solid var(--black-color);
+.bl-card-wrapper{
+  min-height: 300px;
 }
 .bl-wrapper h5 {
   font-size: 32px;
-  padding: 5px 0;
 }
 .bl-card-wraaper-info h6{
   font-size: 16px;
 }
-
-
-.author-name, .sub-title{
+.bl-content h6 {
+  font-size: 16px;
+}
+.bl-title:hover{
+  color: var(--white-color);
+}
+.author-name {
   color: var(--tertiary-color);
-  display: inline-block;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: stretch;
 }
 
 .bl-card-img img {
@@ -145,16 +142,36 @@ a:hover{
   opacity: 80%;
   mix-blend-mode: multiply;
 }
+.bl-content{
+  bottom: 50px;
+  padding: 0 20px;
+}
+
 .bl-title:hover{
   color: var(--white-color);
 }
-.bl-card-wrapper{
-  min-height: 300px;
+.section-title {
+  color: var(--primary-color);
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: 0.3s linear;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  border-bottom: 1px solid var(--black-color);
 }
+
+
+
+
+
+
+
 /* banner section css end */
 
-/* combinator section start */
-.combinator-area .grid-container {
+/* futurism section start */
+.news-area .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
@@ -162,6 +179,8 @@ a:hover{
   align-items: stretch;
 }
 
+
+.news-area .grid-container
 .bl-card-wraaper .bl-card-img img{
   max-width: 75px;
 }
@@ -177,18 +196,18 @@ a:hover{
   gap: 16px;
 }
 
-/*====style 2 start=====*/
+/* style-2 */
 .style-2 .grid-container {
   grid-template-columns: 1fr 2fr;
 }
 .style-2 .bl-wrapper:nth-child(1){
-  grid-column: 2;
   grid-row: 1;
+  grid-column: 2 / -1;
 }
-/*====style 2 end=====*/
 
 
 
+/* futurism section end */
 
-
-/* combinator section end */
+/* popular post section css start  */
+/* popular post section css end  */
