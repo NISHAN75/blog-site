@@ -9,33 +9,49 @@
 }
 /* max-width 1399 */
 @media (max-width: 1399.98px) {
-  
+ 
 }
 /* max-width 1199 */
 @media (max-width: 1199.98px) { 
-
+  .combinator-area .grid-container , .style-2 .grid-container {
+    grid-template-columns: 1fr;
+    gap: 24px
+  } 
+  .style-2 .bl-wrapper:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 /* max-width 991 */
 @media (max-width: 991.98px) {
-    
 
-   
 }
 /* max-width 767 */
 @media (max-width: 767.98px) { 
-  .innovation-content-info h2 {
-    font-size: 32px;
-  }
+  
+
+    
 }
 /* max-width 575 */
 @media (max-width: 575.98px) {
-   
  
+   
+    
+     
   
 }
 /* max-width 479 */
 @media (max-width: 479.98px) {
     
+      /* futurism section css start */
+      .bl-wrapper h5 {
+        font-size: 24px;
+      }
+      .bl-card-wraaper-info h6 {
+        font-size: 16px;
+      }
+      /* futurism section css end */
+      
  
   
 }

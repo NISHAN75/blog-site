@@ -26,6 +26,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap');
 
 
+
+
 /* position-relative */
 .position-relative{
   position: relative !important;
@@ -63,9 +65,25 @@
 .overflow-hidden{
   overflow: hidden !important;
 }
-/* mb-3 */
+.big-fix{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.m-0{
+  margin: 0;
+}
+
+/* margin-bottom */
 .mb-3{
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
+}
+.mb-p p:last-child{
+  margin: 0 !important;
+}
+img{
+  height: auto;
+  max-width: 100%;
 }
 a{
   text-decoration: none;
@@ -74,25 +92,24 @@ a{
 a:hover{
   color: var(--white-color);
 }
-img{
-  max-width: 100%;
-  height: auto;
+/* banner section css start */
+.innovation-area{
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
-.m-0{
+.bl-title{
+  color: var(--primary-color) !important;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: 0.3s linear;
   margin: 0;
 }
-.big-fix{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* banner section css start */
-
-/* banner section end */
-
-/* innovation section start */
-.section-title {
+.section-title{
   color: var(--primary-color);
   font-family: "Cabin", sans-serif;
   font-weight: 700;
@@ -103,39 +120,23 @@ img{
   text-transform: capitalize;
   border-bottom: 1px solid var(--black-color);
 }
-.innovation-area{
-  background-color: var(--black-color);
-  color: var(--white-color);
+.bl-wrapper h5 {
+  font-size: 32px;
+}
+.bl-card-wraaper-info h6{
   font-size: 16px;
-  line-height: 1.5;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
 }
-.bl-title {
-   color: var(--primary-color);
-  font-family: "Cabin", sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  transition: 0.3s linear;
-  margin: 0;
-}
-.author-name  , .sub-title{
+
+
+.author-name, .sub-title{
   color: var(--tertiary-color);
   display: inline-block;
-}
-.sub-title {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-.author-name:hover , .sub-title{
-  color: var(--tertiary-color);
   font-size: 16px;
+  line-height: 1;
 }
-.grid-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  align-items: stretch;
+
+.bl-card-img img {
+  max-width: 75px;
 }
 .bl-post-img::before{
   position: absolute;
@@ -148,23 +149,71 @@ img{
   opacity: 80%;
   mix-blend-mode: multiply;
 }
-.innovation-content-info h2 {
-  font-size: 40px;
+.bl-title:hover{
+  color: var(--white-color);
 }
-.author-info img {
+.bl-card-wrapper{
+  min-height: 300px;
+}
+/* banner section css end */
+
+/* combinator section start */
+.innovation-area .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.bl-card-wraaper .bl-card-img img{
+  max-width: 75px;
+}
+.bl-card-wraaper-info .bl-content{
+  padding: 0;
+}
+.bl-card-wraaper:last-child{
+  margin-bottom: 0 !important;
+}
+.bl-card-wraaper-info {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+.bl-content {
+  padding: 0 20px;
+  bottom: 20px;
+}
+.bl-content p{
+  margin: 0;
+}
+/*====style 2 start=====*/
+.style-2 .grid-container {
+  grid-template-columns: 1fr 2fr;
+}
+.style-2 .bl-wrapper:nth-child(1){
+  grid-column: 2;
+  grid-row: 1;
+}
+/*====style 2 end=====*/
+
+
+.author-img img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
 }
 .author-info {
-  margin: 16px 0;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 16px;
   align-items: center;
+  gap: 16px;
+  margin-top: 16px;
 }
-.author-inner-info h6{
-  font-size: 16px;
-  padding-right: 8px;
+.author-info span{
+  font-size: 10px;
+  display: inline-block;
+  margin-left: 5px;
 }
-/* innovation section end */
+
+
+/* combinator section end */
