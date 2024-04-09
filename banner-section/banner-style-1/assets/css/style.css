@@ -94,7 +94,6 @@ a{
   font-size: 48px !important;
 }
 .bl-wrapper .bl-title{
-  font-size: 32px;
   color: var(--primary-color);
   font-family: "Cabin", sans-serif;
   font-weight: 700;
@@ -102,6 +101,9 @@ a{
   transition: 0.3s linear;
   margin: 0;
   margin-bottom: 12px;
+}
+.bl-wrapper h5 {
+  font-size: 32px;
 }
 
 .bl-title:hover{

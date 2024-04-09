@@ -158,7 +158,7 @@ a:hover{
 /* banner section css end */
 
 /* futurism section start */
-.futurism-area .grid-container{
+.combinator-area .grid-container{
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: auto;
@@ -218,6 +218,3 @@ a:hover{
 
 
 /* futurism section end */
-
-/* popular post section css start  */
-/* popular post section css end  */

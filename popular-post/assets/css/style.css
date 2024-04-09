@@ -81,7 +81,6 @@ img{
 
 /* banner section css start */
 .bl-wrapper .bl-title , .popular-post-wrapper-info .bl-title {
-  font-size: 32px;
   color: var(--primary-color);
   font-family: "Cabin", sans-serif;
   font-weight: 700;
@@ -90,6 +89,14 @@ img{
   margin: 0;
   margin-bottom: 0px;
 }
+.bl-wrapper h5 {
+  font-size: 32px;
+}
+.popular-post-wrapper h6{
+  font-size: 20px;
+  padding: 5px 0;
+}
+
 .author-name  , .sub-title{
   color: var(--tertiary-color);
   display: inline-block;
@@ -97,14 +104,12 @@ img{
 .author-name:hover{
   color: var(--tertiary-color);
 }
-
 .grid-container{
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 16px;
   align-items: stretch;
 }
-
 .bl-post-img::before{
   position: absolute;
   left: 0;
@@ -143,13 +148,11 @@ img{
   border-bottom: 1px solid var(--white-color);
   padding:20px 0px;
 }
-.popular-post-wrapper-info .bl-title {
-  font-size: 20px;
-  margin: 5px 0;
+.popular-post-wrapper-info:first-child{
+  padding-top: 0;
 }
 .popular-post-wrapper-info:last-child{
   border-bottom: 0;
   padding-bottom: 0;
-
 }
 /* popular post section css end  */

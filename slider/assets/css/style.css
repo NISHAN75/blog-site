@@ -80,8 +80,15 @@ img{
 }
 
 /* banner section css start */
-.bl-wrapper .bl-title , .popular-post-wrapper-info .bl-title {
-  font-size: 32px;
+.bl-slider-wrapper{
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.bl-wrapper .bl-title{
   color: var(--primary-color);
   font-family: "Cabin", sans-serif;
   font-weight: 700;
@@ -97,14 +104,12 @@ img{
 .author-name:hover{
   color: var(--tertiary-color);
 }
-
 .grid-container{
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 16px;
   align-items: stretch;
 }
-
 .bl-post-img::before{
   position: absolute;
   left: 0;
@@ -117,39 +122,24 @@ img{
   mix-blend-mode: multiply;
 }
 .bl-content{
-  bottom: 50px;
-  padding: 0 20px;
+  bottom: 20px;
+  padding: 0 10px;
 }
 .bl-title:hover{
   color: var(--white-color);
 }
+.bl-wrapper h5 {
+  font-size: 20px;
+}
 
 /* banner section end */
 
-/* popular post section css start  */
-.popular-section{
-  background-color: var(--black-color);
-  color: var(--white-color);
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
+/* popular secton start */
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: '';
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: '';
 }
 
-.popular-post-wrapper {
-  padding: 40px 20px;
-}
-.popular-post-wrapper-info {
-  border-bottom: 1px solid var(--white-color);
-  padding:20px 0px;
-}
-.popular-post-wrapper-info .bl-title {
-  font-size: 20px;
-  margin: 5px 0;
-}
-.popular-post-wrapper-info:last-child{
-  border-bottom: 0;
-  padding-bottom: 0;
-
-}
-/* popular post section css end  */
+/* popular secton end */
